@@ -31,7 +31,7 @@ M.get_colors = function(conf)
         MsgSeparator        = { fg = c.string, bg = not conf.transparent and c.line or nil, bold = conf.bold },
         NonText             = { fg = c.comment },
         Normal              = { fg = c.fg, bg = not conf.transparent and c.bg or nil },
-        NormalFloat         = { fg = c.fg, bg = not conf.transparent and c.inactiveBg or nil },
+        NormalFloat         = { fg = c.fg, bg = c.bg_2 },
         ModeMsg             = { fg = c.string },
         Pmenu               = { fg = c.comment, bg = c.bg, bold = false },
         PmenuKindSel        = { bg = c.floatBorder },
